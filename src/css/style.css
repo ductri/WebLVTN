@@ -36,15 +36,18 @@
 	margin-right: 0;
 	margin-left: 0;
 	border-radius: 0;
+	outline: none;
 }
 
 .btn-minimize:hover, .btn-minimize:active, .btn-minimize.btn-plus:active, .btn-minimize.btn-plus:hover {
 	background-color: #ffdf63;
+	outline: none;
 }
 
 .btn-minimize.btn-plus {
     background-color: #fce792;
 	border-radius: 0;
+	outline: none;
 }
 
 #register {
