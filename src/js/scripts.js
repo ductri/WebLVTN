@@ -129,3 +129,103 @@ function clear() {
 	}
 	state = 0;
 }
+
+//Guide Minimize button
+$(".btn-minimize").click(function(){
+	$(this).toggleClass('btn-plus');
+	$(".hdsd").slideToggle();
+	var btn = document.getElementById("buttonUp").className;
+	switch (btn) {
+		case "glyphicon glyphicon-chevron-up":
+			document.getElementById("buttonUp").className="glyphicon glyphicon-chevron-down";
+			break;
+		case "glyphicon glyphicon-chevron-down":
+			document.getElementById("buttonUp").className="glyphicon glyphicon-chevron-up";
+			break;
+		default:
+			document.getElementById("buttonUp").className="glyphicon glyphicon-chevron-up";
+			break;
+	}
+});
+
+//Registration
+function closeDialog() {
+    document.getElementById("register").style.display = "none";
+}
+
+
+// $( function() {
+//     var dialog, form,
+
+//       emailRegex = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
+//       name = $( "#name" ),
+//       email = $( "#email" ),
+//       allFields = $( [] ).add( name ).add( email ),
+
+//     function checkLength( o, n, min, max ) {
+//       if ( o.val().length > max || o.val().length < min ) {
+//         o.addClass( "ui-state-error" );
+//         updateTips( "Length of " + n + " must be between " +
+//           min + " and " + max + "." );
+//         return false;
+//       } else {
+//         return true;
+//       }
+//     }
+
+//     function checkRegexp( o, regexp, n ) {
+//       if ( !( regexp.test( o.val() ) ) ) {
+//         o.addClass( "ui-state-error" );
+//         updateTips( n );
+//         return false;
+//       } else {
+//         return true;
+//       }
+//     }
+
+//     function addUser() {
+//       var valid = true;
+//       // allFields.removeClass( "ui-state-error" );
+
+//       // valid = valid && checkLength( name, "username", 3, 16 );
+//       // valid = valid && checkLength( email, "email", 6, 80 );
+
+//       // valid = valid && checkRegexp( name, /^[a-z]([0-9a-z_\s])+$/i, "Username may consist of a-z, 0-9, underscores, spaces and must begin with a letter." );
+//       // valid = valid && checkRegexp( email, emailRegex, "eg. ui@jquery.com" );
+
+//       // if ( valid ) {
+//       //   $( "#users tbody" ).append( "<tr>" +
+//       //     "<td>" + name.val() + "</td>" +
+//       //     "<td>" + email.val() + "</td>" +
+//       //   "</tr>" );
+//       //   dialog.dialog( "close" );
+//       // }
+//       return valid;
+//     }
+
+//     dialog = $( "#register" ).dialog({
+//       autoOpen: false,
+//       height: 400,
+//       width: 350,
+//       modal: true,
+//       buttons: {
+//         "Create an account": addUser,
+//         Cancel: function() {
+//           dialog.dialog( "close" );
+//         }
+//       },
+//       close: function() {
+//         form[ 0 ].reset();
+//         allFields.removeClass( "ui-state-error" );
+//       }
+//     });
+ 
+//     form = dialog.find( "form" ).on( "submit", function( event ) {
+//       event.preventDefault();
+//       addUser();
+//     });
+ 
+//     $( "#login" ).button().on( "click", function() {
+//       dialog.dialog( "open" );
+//     });
+//   } );

@@ -1,99 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Bootstrap 3, from LayoutIt!</title>
+	<title>Bootstrap 3, from LayoutIt!</title>
 
-    <meta name="description" content="Source code generated using layoutit.com">
-    <meta name="author" content="LayoutIt!">
+	<meta name="description" content="Source code generated using layoutit.com">
+	<meta name="author" content="LayoutIt!">
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-  </head>
-  <body>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  	<!-- Signin -->
+	<script>
+		function myFunction() {
+		    var person = prompt("Please enter your name", "Harry Potter");
+		    if (person != null) {
+		        document.getElementById("demo").innerHTML =
+		        "Hello " + person + "! How are you today?";
+		    }
+		}
+	</script>
 
     <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-			<!--  -->
-			<div class="jumbotron">
-				<h2>
-					Chào bạn Lan
-				</h2>
+		<div class="row">
+			<div class="col-md-12 hdsd">
+				<h3>
+					Hướng dẫn sử dụng:
+				</h3>
 				<p>
-					Mỗi câu bạn gán nhãn sẽ góp phần giúp nhóm mình hoàn thành đề tài luận văn tốt nghiệp. Chân thành cảm ơn!
+					Click vào từng câu trong <em>Nội dung bệnh án</em> và lựa chọn phân loại cảm xúc phù hợp cho câu đó.
+					<ul>
+						<li>
+							Câu có phân loại cảm xúc <span class="positive"><small><strong>TÍCH CỰC</strong></small></span> là những câu <br>
+							<em>Ví dụ: </em>
+						</li>
+						<li>
+							Câu có phân loại cảm xúc <span class="neutral"><small><strong>TRUNG TÍNH</strong></small></span> là những câu <br>
+							<em>Ví dụ: </em>
+						</li>
+						<li>
+							Câu có phân loại cảm xúc <span class="negative"><small><strong>TIÊU CỰC</strong></small></span> là những câu <br>
+							<em>Ví dụ: </em>
+						</li>
+					</ul>
 				</p>
 			</div>
+			<p class="minmax">
+				<button type="button" class="btn btn-block btn-xs btn-minimize">
+					<span id="buttonUp" class="glyphicon glyphicon-chevron-up"></span>
+				</button>
+			</p>
+		</div>
+		<div class="row">
+			<div class="col-md-3 count">
+				<h2>
+					Dữ liệu #22
+				</h2>
+				<p>
+					<table>
+						<tr>
+							<td>Số lượt đã gắn nhãn</td>
+							<td>: 0</td>
+						</tr>
+						<tr>
+							<td>Số câu</td>
+							<td>: 24</td>
+						</tr>
+					</table>
+				</p>
+			</div>
+			<div class="col-md-8 ndba">
+				<h2>
+					Nội dung
+				</h2>
+				<samp>
+					<span id="1" class="sentence">Ngày nhập_viện : .</span><br>
+					<span id="2" class="sentence">28/01/2014 .</span><br>
+					<span id="3" class="sentence">Ngày xuất_viện : .</span><br>
+					<span id="4" class="sentence">29/01/2014 .</span><br>
+					<span id="5" class="sentence">Lý_do vào viện : , Đau ngực .</span><br>
+					<span id="6" class="sentence">Bệnh_sử : , Bệnh_nhân đau ngực vài ngày_nay , hôm_nay cơn đau ngực tăng dần , không ho , không sôt , gia_đình đưa bệnh_nhân vào cấp_cứu .</span><br>
+					<span id="7" class="sentence">Tiền_sử : , Lao_phổi . Suy hô_hấp 1 lần , đang ngưng thuốc_lá .</span><br>
+					<span id="8" class="sentence">Khám bệnh : .</span><br>
+					<span id="9" class="sentence">1 : Khám toàn_thân : , Bệnh_nhân tỉnh , niêm hồng , không phù .</span><br>
+					<span id="10" class="sentence">2 : Khám bộ_phận : .</span><br>
+					<span id="11" class="sentence">a ) Tuần_hoàn : , nhịp tim đều .</span><br>
+					<span id="12" class="sentence">b ) Hô_hấp : , phổi không ran .</span><br>
+					<span id="13" class="sentence">c ) Tiêu_hóa : , Bụng mềm , không điểm đau khu_trú .</span><br>
+					<span id="14" class="sentence">d ) Thận : , chưa phát_hiện bất_thường .</span><br>
+					<span id="15" class="sentence">e ) Cơ_quan khác : .</span><br>
+					<span id="16" class="sentence">Thần_kinh : dấu thần_kinh định_vị ( âm_tính ) .</span><br>
+					<span id="17" class="sentence">Cơ : chưa phát_hiện bất_thường .</span><br>
+					<span id="18" class="sentence">Nội_tiết : chưa phát_hiện bất_thường .</span><br>
+					<span id="19" class="sentence">Tai mũi họng : chưa phát_hiện bất_thường .</span><br>
+					<span id="20" class="sentence">Răng_hàm mặt : chưa phát_hiện bất_thường .</span><br>
+					<span id="21" class="sentence">Mắt : chưa phát_hiện bất_thường .</span><br>
+					<span id="22" class="sentence">Tóm_tắt bệnh_án : , .</span><br>
+					<span id="23" class="sentence">Chẩn_đoán : , Phình quai động_mạch chủ / Tăng_Huyết_Áp .</span><br>
+					<span id="24" class="sentence">Điều_trị : , nội_khoa ,</span><br>
+					<span id="25" class="sentence"></span><br>
+				</samp>
+
+				<p>
+				<br>
+				<button type="button" class="btn btn-primary">
+					Lưu kết quả
+				</button>
+				<div>
+					<strong><em>Mỗi câu bạn đánh dấu là một đóng góp không nhỏ giúp nhóm mình hoàn thành luận văn tốt nghiệp. Xin chân thành cảm ơn!</em></strong>
+				</div>
+				</p>
+			</div>
+			<div class="col-md-2"> </div>
 		</div>
 	</div>
 	<div class="row">
-		
-		<div class="col-md-3">
-			<h2>
-				Mẫu bệnh án số: 22
-			</h2>
-			<p>
-				<table>
-					<tr>
-						<td>Số lượt đã gắn nhãn</td>
-						<td>: 0</td>
-					</tr>
-					<tr>
-						<td>Số câu</td>
-						<td>: 24</td>
-					</tr>
-				</table>
-			</p>
-		</div>
-		<div class="col-md-8 ndba">
-			<h2>
-				Nội dung bệnh án
-			</h2>
-			<samp>
-				<span id="1" class="sentence">Ngày nhập_viện : .</span><br>
-				<span id="2" class="sentence">28/01/2014 .</span><br>
-				<span id="3" class="sentence">Ngày xuất_viện : .</span><br>
-				<span id="4" class="sentence">29/01/2014 .</span><br>
-				<span id="5" class="sentence">Lý_do vào viện : , Đau ngực .</span><br>
-				<span id="6" class="sentence">Bệnh_sử : , Bệnh_nhân đau ngực vài ngày_nay , hôm_nay cơn đau ngực tăng dần , không ho , không sôt , gia_đình đưa bệnh_nhân vào cấp_cứu .</span><br>
-				<span id="7" class="sentence">Tiền_sử : , Lao_phổi . Suy hô_hấp 1 lần , đang ngưng thuốc_lá .</span><br>
-				<span id="8" class="sentence">Khám bệnh : .</span><br>
-				<span id="9" class="sentence">1 : Khám toàn_thân : , Bệnh_nhân tỉnh , niêm hồng , không phù .</span><br>
-				<span id="10" class="sentence">2 : Khám bộ_phận : .</span><br>
-				<span id="11" class="sentence">a ) Tuần_hoàn : , nhịp tim đều .</span><br>
-				<span id="12" class="sentence">b ) Hô_hấp : , phổi không ran .</span><br>
-				<span id="13" class="sentence">c ) Tiêu_hóa : , Bụng mềm , không điểm đau khu_trú .</span><br>
-				<span id="14" class="sentence">d ) Thận : , chưa phát_hiện bất_thường .</span><br>
-				<span id="15" class="sentence">e ) Cơ_quan khác : .</span><br>
-				<span id="16" class="sentence">Thần_kinh : dấu thần_kinh định_vị ( âm_tính ) .</span><br>
-				<span id="17" class="sentence">Cơ : chưa phát_hiện bất_thường .</span><br>
-				<span id="18" class="sentence">Nội_tiết : chưa phát_hiện bất_thường .</span><br>
-				<span id="19" class="sentence">Tai mũi họng : chưa phát_hiện bất_thường .</span><br>
-				<span id="20" class="sentence">Răng_hàm mặt : chưa phát_hiện bất_thường .</span><br>
-				<span id="21" class="sentence">Mắt : chưa phát_hiện bất_thường .</span><br>
-				<span id="22" class="sentence">Tóm_tắt bệnh_án : , .</span><br>
-				<span id="23" class="sentence">Chẩn_đoán : , Phình quai động_mạch chủ / Tăng_Huyết_Áp .</span><br>
-				<span id="24" class="sentence">Điều_trị : , nội_khoa ,</span><br>
-				<span id="25" class="sentence"></span><br>
-			</samp>
+		<div id="register">
+			<form id="dialog-form">
+			<fieldset>
+				<label for="name">Họ tên</label><br>
+			    <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all"><br>
+			    <label for="email">Email</label><br>
+			    <input type="text" name="email" id="email" class="text ui-widget-content ui-corner-all"><br>
+			    <label for="job">Nghề nghiệp</label><br>
+    			<input type="radio" name="job" value="student"> Sinh viên &nbsp&nbsp
+    			<input type="radio" name="job" value="researcher"> Nghiên cứu sinh &nbsp&nbsp
+    			<input type="radio" name="job" value="medical"> Y bác sĩ &nbsp&nbsp
+    			<input type="radio" name="job" value="other"> Khác<br>
 
-			<p>
-			<br>
-			<button type="button" class="btn btn-primary">
-				Lưu kết quả
-			</button>
-			</p>
+    			<label for="major">Chuyên môn</label><br>
+    			<input type="radio" name="major" value="cs"> Khoa học máy tính &nbsp&nbsp
+    			<input type="radio" name="major" value="medical"> Y dược &nbsp&nbsp
+    			<input type="radio" name="major" value="other"> Khác<br>
+
+				<input id="submit" class="button" type="submit" name="submit" value="Xác nhận">
+				<button id="cancel" class="button" type="button" name="cancel" onclick="closeDialog()">Bỏ qua</button>
+    		</fieldset>
+			</form>
 		</div>
-		<div class="col-md-2"> </div>
 	</div>
-</div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
-  </body>
+</body>
 </html>

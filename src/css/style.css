@@ -5,3 +5,116 @@
 .ndba {
 	position: relative;
 }
+
+.positive {
+	padding: 2px;
+	background-color: #5cb85c;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.neutral {
+	padding: 2px;
+	background-color: #4ab0cd;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.negative {
+	padding: 2px;
+	background-color: #d9534f;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.hdsd {
+	background-color: #f7e8ad;
+}
+
+.btn-minimize {
+	background-color: #fce792;
+	margin-right: 0;
+	margin-left: 0;
+	border-radius: 0;
+}
+
+.btn-minimize:hover, .btn-minimize:active, .btn-minimize.btn-plus:active, .btn-minimize.btn-plus:hover {
+	background-color: #ffdf63;
+}
+
+.btn-minimize.btn-plus {
+    background-color: #fce792;
+	border-radius: 0;
+}
+
+#register {
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(20,20,20,0.5);
+}
+
+#dialog-form {
+	/*position: absolute;*/
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 999;
+	overflow: hidden;
+	font-size: 1.3em;
+	padding: 1.5em;
+	padding-bottom: 1em;
+	border-style: double;
+	border-color: #000;
+	width: 30em;
+	margin-top: 5%;
+}
+
+#dialog-form input {
+	margin-top: 0.3em;
+	margin-bottom: 0.7em;
+}
+
+#dialog-form input.button {
+	margin-top: 0.7em;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+}
+
+#name, #email {
+	width: 80%;
+}
+
+#submit {
+	width: 49%;
+	background-color: #4cae4c;
+}
+
+#submit:hover, #submit:active {
+	background-color: #5cb85c;
+}
+
+#cancel {
+	width: 49.5%;
+	margin-top: 0.7em;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	background-color: #eea236;
+}
+
+#cancel:hover, #cancel:active {
+	background-color: #f0ad4e;
+}
