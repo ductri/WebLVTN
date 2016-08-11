@@ -31,6 +31,10 @@
 	background-color: #f7e8ad;
 }
 
+.hdsd li {
+	margin-bottom: 0.5em;
+}
+
 .btn-minimize {
 	background-color: #fce792;
 	margin-right: 0;
